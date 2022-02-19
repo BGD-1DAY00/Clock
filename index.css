@@ -12,7 +12,8 @@ body{
   transform: translate(-50%, -50%);
 }
 hr{
-  color: white;}
+  color: white;
+}
 .clock{
   font-size: 4em;
   position: absolute;
@@ -25,7 +26,56 @@ hr{
   font-weight: bolder;
   
 }
-.clock span{
+.clock span:not(.spans){
   padding: 20px;
   background: #444;
+}
+
+@media only screen and (max-width: 900px){
+
+  .clock{
+    font-size: 3em;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin:  auto;
+    color: red; 
+    font-family: arial;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 690px){
+
+  .clock{
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin:  auto;
+    color: red; 
+    font-family: arial;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .spans{
+    transform: rotate(90deg);
+    display: inline;
+    position:relative;
+    top: 7mm;
+   
+  }
+  .headingClock{
+    font-weight: bold;
+    font-size: 4em;
+    color: aliceblue;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
