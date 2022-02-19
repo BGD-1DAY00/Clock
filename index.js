@@ -7,8 +7,8 @@ const tick = ()=>{
   const sec = now.getSeconds()
 
   const html = `
-    <span> ${hours}</span> :
-    <span> ${min}</span> : 
+    <span> ${hours}</span><span class='spans'>:</span>
+    <span> ${min}</span> <span class='spans'>:</span> 
     <span> ${sec}</span> 
 
   `
